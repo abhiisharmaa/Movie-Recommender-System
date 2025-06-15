@@ -1,4 +1,5 @@
 # 🎬 Movie Recommender System
+Link: https://movie-recommender-system-fzlpwu2qsg6je3pmvskxsk.streamlit.app/
 
 A powerful content-based movie recommender system built using Python and Streamlit. It suggests movies similar to the one you enter, displaying posters, IMDb links, and YouTube trailers for an enhanced user experience.
 
