@@ -129,19 +129,21 @@ if recommend_btn:
                 if imdb_id:
                     imdb_url = f"https://www.imdb.com/title/{imdb_id}"
                     youtube_url = f"https://www.youtube.com/results?search_query={name} official trailer"
-                    st.markdown(
-                        f"""
-                        <div class="movie-card">
-                            <img src="{poster}" class="movie-poster" alt="{name}">
-                            <p class="movie-title">{name}</p>
-                            <a href="{youtube_url}" target="_blank" 
-                               style="color: #e74c3c; font-size: 0.9rem; font-weight: 600;">
-                               🎞 Watch Trailer
-                            </a>
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                    )
+                   st.markdown(
+    f"""
+    <div class="movie-card" style="text-align:center">
+        <a href="{imdb_url}" target="_blank">
+            <img src="{poster}" class="movie-poster" alt="{name}">
+        </a>
+        <p class="movie-title">{name}</p>
+        <a href="{youtube_url}" target="_blank" 
+           style="color: #e74c3c; font-size: 0.9rem; font-weight: 600;">
+           🎞 Watch Trailer
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
             else:
