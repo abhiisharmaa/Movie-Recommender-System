@@ -129,7 +129,7 @@ if recommend_btn:
                 if imdb_id:
                     imdb_url = f"https://www.imdb.com/title/{imdb_id}"
                     youtube_url = f"https://www.youtube.com/results?search_query={name} official trailer"
-                   st.markdown(
+st.markdown(
     f"""
     <div class="movie-card" style="text-align:center">
         <a href="{imdb_url}" target="_blank">
@@ -144,6 +144,7 @@ if recommend_btn:
     """,
     unsafe_allow_html=True
 )
+
 
 
             else:
